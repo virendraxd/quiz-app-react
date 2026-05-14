@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --border-color: #8E977D;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F8F3E1;
+}
+
+h1, h2, p, li {
+  color: #41431B;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+}
+
+button .next {
+  margin-top: 2rem;
+  width: 10rem;
+}
+
+@media (max-width: 320px) {
+  
+  .app-container {
+    padding: 1rem;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .app-container {
+    /* background-color: tomato; */
+    padding: 2rem 1rem;
+    height: 100%;
+  }
+}
