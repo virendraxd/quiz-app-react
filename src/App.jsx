@@ -59,10 +59,7 @@ function App() {
   return (
     <>
       <div className="app-container">
-        <h1>MC-Quiz App</h1>
-        <div>
-          <p></p>
-        </div>
+        <h1>MC Quiz App</h1>
         <Stats
           score={score}
           currentQuestion={currentQuestion}
