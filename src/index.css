@@ -165,6 +165,52 @@ svg {
   width: auto;
 }
 
+.portfolio-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  background: rgb(255, 255, 255);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.3);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+
+  z-index: 1000;
+
+  backdrop-filter: blur(8px);
+}
+
+.portfolio-btn:hover {
+  transform: scale(1.08);
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.4);
+
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.portfolio-btn-img {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 @media (max-width: 425px) {
   .rules {
     padding: 1rem 1.5rem;

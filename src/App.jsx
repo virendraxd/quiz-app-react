@@ -6,6 +6,7 @@ import questions from './data/questions'
 import Rules from './components/Rules'
 import Stats from './components/Stats'
 import Result from './components/Result'
+import DeveloperInfo from './components/DeveloperInfo'
 
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
@@ -103,6 +104,7 @@ function App() {
           setResultContainerActive={setResultContainerActive}
           handleRestart={handleRestart}
         />
+        <DeveloperInfo />
       </div>
     </>
   )
