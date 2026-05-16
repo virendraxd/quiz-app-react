@@ -6,7 +6,7 @@ function DeveloperInfo() {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <img src="/assets/favicon.jpg" alt="virendra-portfolio-logo" />
+                <img src="src/assets/favicon.svg" alt="virendra-portfolio-logo" />
                 <div className="middle">
                     <p>Developed by
                         <span> Virendra Singh </span>
