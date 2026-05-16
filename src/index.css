@@ -165,50 +165,48 @@ svg {
   width: auto;
 }
 
-.portfolio-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-
-  width: 44px;
-  height: 44px;
-
-  border-radius: 50%;
-
-  background: rgb(255, 255, 255);
-
+.dev-info {
   display: flex;
+  gap: 10px;
+  color: white;
+  background-color: #000000;
   align-items: center;
   justify-content: center;
-
-  box-shadow:
-    0 4px 15px rgba(0, 0, 0, 0.3);
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    background 0.2s ease;
-
+  padding: 4px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 18px;
+  text-decoration: none;
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.2rem;
   z-index: 1000;
-
-  backdrop-filter: blur(8px);
 }
 
-.portfolio-btn:hover {
-  transform: scale(1.08);
-
-  box-shadow:
-    0 6px 18px rgba(0, 0, 0, 0.4);
-
-  background: rgba(255, 255, 255, 0.95);
-}
-
-.portfolio-btn-img {
-  width: 34px;
-  height: 34px;
-
-  border-radius: 50%;
+.dev-info img {
+  height: 35px;
   object-fit: cover;
+}
+
+.dev-info .middle {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+.dev-info p {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.6em;
+  font-weight: 700;
+}
+
+.dev-info p span {
+  color: #12B9FF;
+  font-size: 1rem;
 }
 
 @media (max-width: 425px) {
@@ -225,7 +223,11 @@ svg {
     width: stretch;
   }
 
-
+  .dev-info {
+    transform: scale(0.8);
+    right: -0.8rem;
+    bottom: -0.15rem;
+  }
 }
 
 @media (max-width: 590px) {
@@ -242,5 +244,11 @@ svg {
     width: 100%;
     justify-content: center;
     gap: 1rem;
+  }
+
+  .dev-info {
+    transform: scale(0.9);
+    right: -0.4rem;
+    bottom: -0.08rem;
   }
 }

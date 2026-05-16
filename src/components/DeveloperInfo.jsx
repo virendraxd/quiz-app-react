@@ -1,17 +1,18 @@
 function DeveloperInfo() {
     return (
-        <div>
-            <a
+        <div >
+            <a className="dev-info"
                 href="https://virendraxd.github.io/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="portfolio-btn"
             >
-                <img
-                    src="/assets\favicon.jpg"
-                    alt="Portfolio"
-                    className="portfolio-btn-img"
-                />
+                <img src="/assets/favicon.jpg" alt="virendra-portfolio-logo" />
+                <div className="middle">
+                    <p>Developed by
+                        <span> Virendra Singh </span>
+                    </p>
+                    &rarr;
+                </div>
             </a>
         </div>
     )
