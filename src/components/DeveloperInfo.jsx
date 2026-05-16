@@ -1,3 +1,4 @@
+
 function DeveloperInfo() {
     return (
         <div >
@@ -6,7 +7,7 @@ function DeveloperInfo() {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <img src="public/favicon.svg" alt="virendra-portfolio-logo" />
+                <img src="/assets/favicon.svg" alt="virendra-portfolio-logo" />
                 <div className="middle">
                     <p>Developed by
                         <span> Virendra Singh </span>
